@@ -9,6 +9,6 @@ TextBook: Warming-Up C Programming
 
 >1학년 2학기
 
-Language: C (MFC)
+Language: C++ (MFC)
 
 TextBook: Unknown
