@@ -5,7 +5,7 @@ NSU 전자공학과
 
 Language: C 
 
-TextBook: Warming-Up C Programming
+TextBook: [Warming-Up C Programming](https://github.com/NJHdev/NSU-EE/tree/main/1-1/PDF)
 
 >1학년 2학기
 
