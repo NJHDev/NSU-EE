@@ -11,4 +11,4 @@ TextBook: Warming-Up C Programming
 
 Language: C++ (MFC)
 
-TextBook: Unknown
+TextBook: [PDF](https://github.com/NJHdev/NSU-EE/tree/main/1-2/Visual%20C%2B%2B%20PDF).
