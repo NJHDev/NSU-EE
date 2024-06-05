@@ -1,0 +1,32 @@
+<!--
+    Quiz: 출력문자를 본인의 학과명으로 수정 후 마우스를 내릴때 실행시켜라
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animate Basic</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        // 이벤트를 연결합니다.
+        $(document).ready(function () {
+            // 이벤트를 연결합니다.
+            $('h1').hover(function () {
+                // 색상을 제거합니다.
+                $(this).css({
+                    background: '',
+                    color: ''
+                });
+            }, function () {
+                // 색상을 변경합니다.
+                $(this).css({
+                    background: 'red',
+                    color: 'white'
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>전자공학과</h1>
+</body>
+</html>

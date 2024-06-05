@@ -1,0 +1,25 @@
+<!--
+    Quiz: 버튼을 클릭하면 우리학교 홈페이지가 열리도록 코딩을 변경하시오
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Traditional Event - Default Event</title>
+    <script>
+        // 이벤트를 연결합니다.
+        window.onload = function () {
+            // 문서 객체를 선택합니다.
+            let button = document.getElementById('button');
+            
+            // 이벤트를 연결합니다.
+            button.onclick = function () {
+                // 기본 이벤트를 제거합니다.
+                return false;
+            };
+        };
+    </script>
+</head>
+<body>
+    <a id="button" href="https://ee.nsu.ac.kr">학과홈페이지</a>
+</body>
+</html>

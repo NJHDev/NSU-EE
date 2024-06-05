@@ -1,0 +1,32 @@
+<!--
+    Quiz: BOX크기를 +100 하고, 실행되는 색상을 역순으로 출력하라
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery Basic</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            // 스타일 변경 및 이벤트 연결
+            $('#box').css({
+                width: 200,
+                height: 200,
+                background: 'orange'
+            }).on('mouseleave', function () {
+                $(this).css('background', 'red');
+            }).on('mouseenter', function () {
+                $(this).css('background', 'orange');
+            }).on('click', function () {
+                $(this).css('background', 'blue');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="box"></div>
+</body>
+
+</html>

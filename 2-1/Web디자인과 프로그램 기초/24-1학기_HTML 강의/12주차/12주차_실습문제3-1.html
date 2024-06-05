@@ -1,0 +1,32 @@
+<!--
+    Quiz: BOX를 1개추가 하여 , 사이즈 +100 하여 우측 정렬형태로 출력하라
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Basic</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            // 스타일을 적용합니다.
+            $('.box').css('float', 'left');
+            $('.box').css('margin', 10);
+            $('.box').css('width', 100);
+            $('.box').css('height', 100);
+            $('.box').css('backgroundColor', 'red');
+
+            $('.box1').css('float', 'right');
+            $('.box1').css('margin', 10);
+            $('.box1').css('width', 200);
+            $('.box1').css('height', 200);
+            $('.box1').css('backgroundColor', 'blue');
+        });
+    </script>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box1"></div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!--
+    Quiz: 결과와 같이 5회 반복하여 본인의 학과명을 역순 출력하여라
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery DOM</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        // 이벤트를 연결합니다.
+        $(document).ready(function () {
+            // 10회 반복합니다.
+            for (var i = 9; i >= 0; i--) {
+                // 문서 객체를 생성합니다.
+                var $dynamic = $('<h1>전자공학과 + ' + i + '</h1>').css({
+                        backgroundColor: 'black',
+                        color: 'red'
+                    });
+                
+                // 문서 객체를 추가합니다.
+                $('body').append($dynamic);
+            }
+        });
+    </script>
+</head>
+<body>
+
+</body>
+</html>

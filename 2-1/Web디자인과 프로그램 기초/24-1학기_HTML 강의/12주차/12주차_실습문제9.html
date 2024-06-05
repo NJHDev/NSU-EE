@@ -1,0 +1,26 @@
+<!--
+    Quiz: width를 2배로 opacity 를 0.1로 time을 5000 으로 변경한 후 확인하라
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animate Basic</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            // 스타일을 변경합니다.
+            $('#box').css({
+                width: 100,
+                height: 100,
+                background: 'red'
+            }).animate({
+                width: 600,
+                opacity: 0.1,
+            }, 5000);
+        });
+    </script>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+</html>

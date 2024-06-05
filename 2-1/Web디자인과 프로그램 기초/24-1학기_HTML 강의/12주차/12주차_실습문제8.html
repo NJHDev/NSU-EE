@@ -1,0 +1,29 @@
+<!--
+    Quiz: 본인의 학과명를 click 할 경우 학과 소개문이 출력되도록 하여라
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Basic</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <link rel="stylesheet" href="/9주차/프로젝트/style.css">
+    <script>
+        $(document).ready(function () {
+            // 이벤트를 연결합니다.
+            $('button').click(function () {
+                // 페이지를 로드한 후에 페이드 효과를 적용합니다.
+                $('.page').load('/9주차/프로젝트/9주차_프로젝트.html', function () {
+                    $(this).fadeToggle('slow');
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <button>전자공학과</button>
+    <div class="page" style="display: none;">
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+    </div>
+</body>
+</html> 

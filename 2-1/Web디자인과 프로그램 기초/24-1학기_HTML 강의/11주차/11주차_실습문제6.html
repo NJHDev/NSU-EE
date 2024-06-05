@@ -1,0 +1,26 @@
+<!--
+    Quiz: 변수 now를 today 로 변경한 후 3 초마다 시계 [시간]가 실행되도록 수정하라
+-->
+<!DOCTYPE html>
+<html>	
+	<head>
+		<title>Clock</title>
+		<script>
+			// 이벤트를 연결합니다.
+			window.onload = function () {
+				// 변수를 선언합니다.
+				var clock = document.getElementById('clock');
+
+				// 1초마다 함수를 실행합니다.
+				setInterval(function () {
+					var today = new Date();
+					clock.innerHTML = today.toString();
+
+				}, 3000);
+			};
+		</script>
+	</head>
+	<body>
+		<h1 id="clock"></h1>
+	</body>
+</html>

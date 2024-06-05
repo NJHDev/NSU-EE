@@ -1,0 +1,32 @@
+<!--
+    Quiz: image를 1개 추가하여, 200 사이즈로 출력하라
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jQuery Basic</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        // 이벤트를 연결합니다.
+        $(document).ready(function () {
+            // 속성을 지정합니다.
+            $('img').attr('alt', 'jQuery 라이브러리를 사용한 속성 지정');
+            $('img').attr('src', 'http://placehold.it/100x100');
+            $('img').attr('width', '100');
+
+            $('.a2').attr('alt', 'jQuery 라이브러리를 사용한 속성 지정');
+            $('.a2').attr('src', 'http://placehold.it/200x200');
+            $('.a2').attr('width', '200');
+
+
+            
+        });
+    </script>
+</head>
+<body>
+    <img>
+    <img>
+    <img>
+    <img class="a2">
+</body>
+</html>

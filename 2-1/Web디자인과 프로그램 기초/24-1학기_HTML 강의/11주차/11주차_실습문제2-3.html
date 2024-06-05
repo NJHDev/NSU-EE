@@ -1,0 +1,33 @@
+<!--
+    Quiz: HTML 태그를 생성하여 기존 문서를 삭제하고 본인의 학과명을 5회 반복하여 출력하라
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Basic</title>
+    <script>
+        // 이벤트를 연결합니다.
+        window.onload = function () {
+            // 문서 객체를 선택합니다.
+            var headers = document.querySelectorAll('h1');
+
+            for (var i = 0; i < headers.length; i++) {
+                // 변수를 선언합니다.
+                var header = headers[i];
+
+                // 문서 객체를 조작합니다.
+                header.style.color = 'blue';
+                header.style.background = 'skyblue';
+                header.innerHTML = '전자공학과';
+            }
+        };
+    </script>
+</head>
+<body>
+    <h1>Header</h1>
+    <h1>Header</h1>
+    <h1>Header</h1>
+    <h1>Header</h1>
+    <h1>Header</h1>
+</body>
+</html>

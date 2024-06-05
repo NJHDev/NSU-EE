@@ -1,0 +1,26 @@
+<!--
+    Quiz: 변수 data-custom 를 학교명으로 변경한 후 본인의 이름이 출력되도록 하라
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DOM Basic</title>
+    <script>
+        // 이벤트를 연결합니다.
+        window.onload = function () {
+            // 속성을 지정합니다.
+            document.body.setAttribute('data-custom', 'Namseoul University');
+
+            // 속성을 추출합니다.
+            var dataCustom = document.body.getAttribute('data-custom');
+            document.write('황남주');
+        };
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

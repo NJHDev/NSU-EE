@@ -1,0 +1,24 @@
+<!--
+    Quiz: 변수 hwang를 본인의 성으로 변경한 후 출력되는 화면의 크기를 각각 +100 을 하여 수정된 결과로 출력하라
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Basic</title>
+    <script>
+        // 이벤트를 연결합니다.
+        window.onload = function () {
+            // 변수를 선언합니다.
+            var hwang = document.getElementById('image');
+
+            // 속성을 변경합니다.
+            hwang.src = 'http://placehold.it/400x300';
+            hwang.width = 400;
+            hwang.height = 300;
+        };
+    </script>
+</head>
+<body>
+    <img id="image">
+</body>
+</html>
