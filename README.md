@@ -15,7 +15,7 @@ Program: [Visual Studio 2010](https://drive.google.com/uc?export=download&id=13Q
 
 TextBook: [PDF](https://github.com/NJHdev/NSU-EE/tree/main/1-2/Visual%20C%2B%2B%20PDF)
 
->1학년 2학기
+>2학년 1학기
 
 Language: HTML5, CSS, JS
 
