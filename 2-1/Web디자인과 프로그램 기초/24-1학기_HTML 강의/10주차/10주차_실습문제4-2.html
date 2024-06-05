@@ -1,0 +1,35 @@
+<!--
+    Quiz: 변수 변경/시간바꾸고/내용바꾸고
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Basic 4-2</title>
+    <script>
+        // Date 객체를 선언합니다: 현재 시간 측정
+        var dat = new Date();
+        var time = dat.getHours();
+
+        // 조건문
+        if (time < 12) {
+            document.write('자라..');
+        } else if (time < 14) {
+            document.write('준비하자');
+        } else if (time < 16) {
+            document.write('출근하자');
+        } else if (time < 18) {
+            document.write('뒹굴뒹굴');
+        } else if (time < 20) {
+            document.write('밥먹자');
+        } else {
+            // 여러 가지 업무를 수행합니다.
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

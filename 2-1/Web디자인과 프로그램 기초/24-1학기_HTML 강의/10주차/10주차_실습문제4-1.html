@@ -1,0 +1,66 @@
+<!--
+    Quiz: if~else if 문을 if~elseif ~else 문을 사용하여 코딩하면
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Basic</title>
+    <!--
+    <script>
+    // Date 객체를 선언합니다: 현재 시간 측정
+    var date = new Date();
+    var hours = date.getHours();
+
+    // 조건문
+    if (hours < 5) {
+        document.write('잠을 자렴....');
+    } else {
+        if (hours < 7) {
+            document.write('준비');
+        } else {
+            if (hours < 9) {
+                document.write('출근');
+            } else {
+                if (hours < 12) {
+                    document.write('빈둥빈둥');
+                } else {
+                    if (hours < 1) {
+                        document.write('식사');
+                    } else {
+                        // 여러 가지 업무를 수행합니다.
+                    }
+                }
+            }
+        }
+    }
+    </script>
+    -->
+    <script>
+        // Date 객체를 선언합니다: 현재 시간 측정
+        var date = new Date();
+        var hours = date.getHours();
+
+        // 조건문
+        if (hours < 5) {
+            document.write('잠을 자렴....');
+        } else if (hours < 7) {
+            document.write('준비');
+        } else if (hours < 9) {
+            document.write('출근');
+        } else if (hours < 12) {
+            document.write('빈둥빈둥');
+        } else if (hours < 1) {
+            document.write('식사');
+        } else {
+            // 여러 가지 업무를 수행합니다.
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
