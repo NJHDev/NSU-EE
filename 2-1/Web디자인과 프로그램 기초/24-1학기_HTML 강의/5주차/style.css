@@ -1,0 +1,18 @@
+fieldset {
+    border: 2.5px solid #f1adad;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-image: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvZHcyNC10aWdlci0xNS1zYWt1cmFfMy5qcGc.jpg);
+}
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+input, select, textarea {
+    border: 1.5px solid #f4dcdc;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}

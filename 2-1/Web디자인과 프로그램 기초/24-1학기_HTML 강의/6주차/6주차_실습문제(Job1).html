@@ -1,0 +1,90 @@
+<!--
+    Job: 학과 소개 페이지 만들기+최하단에 학과 교수명 넣기(박스 속성을 이용해 새로 디자인하기) + 작성일자 추가 및 텍스트 위치 수정
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>전자공학과 소개</title>
+    <style>
+        footer ul { overflow: hidden; }
+        footer li {
+            list-style: none;
+            float:left;
+            padding: 20px;
+            font-size: large;
+        }
+
+        footer li:first-child { 
+                                border-radius: 15px 0 0 15px;
+                                border-left: dotted;
+                             }
+        footer li:last-child { 
+                                border-radius: 0 15px 15px 0;
+                                border-right: dotted;
+                            }
+
+        footer li:nth-child(2n) { 
+                                background-color: #7ce7ef;
+                                border-top: thick dotted;
+                                border-bottom: thick dotted;
+                            }
+        footer li:nth-child(2n+1) { 
+                                    background-color:#749dd7;
+                                    border-width: thick;
+                                    border-top: thick dotted;
+                                    border-bottom: thick dotted;
+                                }
+    </style>
+</head>
+<body style="background-image: url(https://i.namu.wiki/i/iD-St9GEVynSksBNljYPd70vm1a7l2dYOoa0zIiVGCmItFK5Cg_ojK8w7fKxCEgmWfNCSFT6YfwrjhqdOll2mQ.svg); background-size: 300px; background-position: center; background-repeat: no-repeat;">
+    <header>
+        <h1 style="text-align: center;">남서울대학교 전자공학과</h1>
+        <h2 style="text-align: right;">2024.04.11</h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#introduce">학과소개</a></li>
+            <li><a href="#prof">교수진 소개</a></li>
+        </ul>
+    </nav>
+    <section id="introduce">
+        <h1> >학과 소개</h1>
+        <article>
+            <h1>첨단기술 분야를 이끄는 기술인</h1>
+            <p>고도로 산업화된 정보화 시대에서 필수라 할 수 있는 전기, 전자, 통신 및 제어공학의 전 분야에 대하여 연구하고 교육한다. 전자공학 전반에 걸쳐 철저한 이론과 개념을 정립할 수 있는 교과목을 제공하고, 창의적인 설계 능력을 배양할 수 있도록 실험실습을 강화하여 실무형 창의 공학인재를 양성하고 있다.</p>
+        </article>
+        <article>
+            <h1>교육목적</h1>
+            <p>4차 산업혁명 시대가 요구하는 스마트 기술역량을 구비한 전자 융합분야의 실무형 인재를 양성한다.</p>
+        </article>
+    </section>
+    <section id="prof">
+        <h1> >교수진 소개</h1>
+        <article>
+            <h1>이승대</h1>
+            <p>seungdae@nsu.ac.kr</p>
+        </article>
+        <article>
+            <h1>양태진</h1>
+            <p>solomon645@nsu.ac.kr</p>
+        </article>
+    </section>
+    <br>
+    <footer>
+        <address>충청남도 천안시 서북구 성환읍 대학로 91</address>
+        <ul>
+            <li>이승대</li>
+            <li>한영오</li>
+            <li>고윤석</li>
+            <li>박용욱</li>
+            <li>이붕주</li>
+            <li>박형근</li>
+            <li>김재욱</li>
+            <li>양태진</li>
+            <li>박승규</li>
+            <li>박성찬</li>
+            <li>김형균</li>
+        </ul>
+    </footer>
+</body>
+</html>
