@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/fonts/font.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a7aa965669.js" crossorigin="anonymous"></script>
+    <script src="assets/script.js"></script>
+    <title>DocMap</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/index.html">
+                    <img src="assets/Logo.png" alt="Docmap">
+                </a>
+            </div>
+            <div>
+                <a href="/introduce.html">DocMap이란?</a>
+                <a href="/pricing.html">가격</a>
+                <a href="/contact.html">연락처</a>
+                <span id="welcomeMessage" style="display:none;"></span>
+                <button id="loginButton">로그인/회원가입</button>
+                <button id="logoutButton" style="display:none;">로그아웃</button>
+            </div>
+        </nav>
+    </header>
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="form-container">
+                <div class="form">
+                    <form id="loginForm">
+                        <label for="username">아이디:</label>
+                        <input type="text" id="username" name="username" required>
+                        <label for="password">비밀번호:</label>
+                        <input type="password" id="password" name="password" required>
+                        <div class="button-container">
+                            <button type="button" id="showSignupButton">회원가입</button>
+                            <button type="submit">로그인</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="signup-form" class="form-container" style="display: none;">
+                <h2>회원가입</h2>
+                <form id="signupForm">
+                    <label for="signup-firstname">이름:</label>
+                    <input type="text" id="signup-firstname" name="firstname" required>
+
+                    <label for="signup-lastname">성:</label>
+                    <input type="text" id="signup-lastname" name="lastname" required>
+
+                    <label for="signup-username">아이디:</label>
+                    <input type="text" id="signup-username" name="username" required>
+
+                    <label for="signup-password">비밀번호:</label>
+                    <input type="password" id="signup-password" name="password" required>
+
+                    <label for="signup-email">이메일:</label>
+                    <input type="email" id="signup-email" name="email" required>
+
+                    <label for="signup-phone">전화번호:</label>
+                    <input type="tel" id="signup-phone" name="phone" required>
+
+                    <button type="submit">회원가입</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <section class="main-section">
+        
+        <h1> 요금제가 출시되지 않았습니다. <br> 잠시만 기다려주세요.</h1>
+        
+    </section>
+    
+    <footer>
+        <p>2024 1학기 Web디자인과 프로그래밍의 기초</p>
+        <p>21100076 황남주, 박성민</p>
+    </footer>
+</body>
+
+</html>

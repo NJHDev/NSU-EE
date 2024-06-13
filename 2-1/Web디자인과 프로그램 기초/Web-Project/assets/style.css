@@ -1,0 +1,303 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css); /* 구글 폰트 불러오기 */
+
+body {
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; /* 폰트 설정 */
+    margin: 0; /* 기본 마진 제거 */
+    padding: 0; /* 기본 패딩 제거 */
+    background-color: #fff; /* 배경색 흰색 설정 */
+    color: #333; /* 글자색 진회색 설정 */
+}
+
+header {
+    background-color: #fff; /* 헤더 배경색 흰색 설정 */
+    border-bottom: 1px solid #ccc; /* 아래쪽 테두리 회색 설정 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 박스 그림자 설정 */
+    padding: 1rem; /* 내부 여백 설정 */
+    position: fixed; /* 고정 위치 설정 */
+    width: 100%; /* 너비 100% 설정 */
+    top: 0; /* 상단에 위치 */
+    left: 0; /* 왼쪽에 위치 */
+    z-index: 1000; /* z-index 설정 */
+}
+
+header nav {
+    display: flex; /* 플렉스 박스 사용 */
+    justify-content: space-between; /* 양쪽 정렬 */
+    align-items: center; /* 중앙 정렬 */
+    max-width: 1200px; /* 최대 너비 설정 */
+    margin: 0 auto; /* 가운데 정렬 */
+}
+
+header nav a {
+    margin: 0 1rem; /* 좌우 마진 설정 */
+    text-decoration: none; /* 밑줄 제거 */
+    color: #333; /* 글자색 설정 */
+}
+
+.logo {
+    font-weight: bold; /* 글자 굵게 설정 */
+    font-size: 1.5rem; /* 글자 크기 설정 */
+}
+
+.logo img {
+    height: 50px; /* 이미지 높이 설정 */
+    width: auto; /* 너비 자동 설정 */
+}
+
+#loginButton, #logoutButton {
+    padding: 8px; /* 내부 여백 설정 */
+    color: white; /* 글자색 흰색 설정 */
+    background-color: #4caf50; /* 배경색 설정 */
+    border: none; /* 테두리 제거 */
+    border-radius: 5px; /* 테두리 반경 설정 */
+    font-size: 14px; /* 글자 크기 설정 */
+    cursor: pointer; /* 커서 포인터 설정 */
+}
+
+.modal {
+    display: none; /* 기본적으로 숨김 */
+    position: absolute; /* 절대 위치 설정 */
+    margin-top: 10px; /* 위쪽 마진 설정 */
+    z-index: 1001; /* z-index 설정 */
+    background-color: #fff; /* 배경색 흰색 설정 */
+    border: 1px solid #ddd; /* 테두리 설정 */
+    width: 350px; /* 너비 설정 */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* 박스 그림자 설정 */
+    border-radius: 10px; /* 테두리 반경 설정 */
+}
+
+.modal-content {
+    padding: 20px; /* 내부 여백 설정 */
+}
+
+.close {
+    color: #aaa; /* 글자색 설정 */
+    float: right; /* 오른쪽 정렬 */
+    font-size: 28px; /* 글자 크기 설정 */
+    font-weight: bold; /* 글자 굵게 설정 */
+    cursor: pointer; /* 커서 포인터 설정 */
+}
+
+.close:hover,
+.close:focus {
+    color: black; /* 마우스 오버 시 글자색 검정색 설정 */
+    text-decoration: none; /* 밑줄 제거 */
+}
+
+#loginForm, #signupForm {
+    display: flex; /* 플렉스 박스 사용 */
+    flex-direction: column; /* 세로 정렬 */
+}
+
+#loginForm label, #signupForm label {
+    margin-bottom: 5px; /* 아래쪽 마진 설정 */
+    color: #333; /* 글자색 설정 */
+}
+
+#loginForm input, #signupForm input {
+    margin-bottom: 15px; /* 아래쪽 마진 설정 */
+    padding: 10px; /* 내부 여백 설정 */
+    border: 1px solid #ddd; /* 테두리 설정 */
+    border-radius: 5px; /* 테두리 반경 설정 */
+    font-size: 16px; /* 글자 크기 설정 */
+}
+
+#loginForm .button-container {
+    display: flex; /* 플렉스 박스 사용 */
+    justify-content: space-between; /* 양쪽 정렬 */
+    gap: 10px; /* 간격 설정 */
+}
+
+#loginForm button, #signupButton, #signupForm button{
+    flex: 1; /* 플렉스 아이템 1 설정 */
+    margin-top: 10px; /* 위쪽 마진 설정 */
+    padding: 10px; /* 내부 여백 설정 */
+    color: white; /* 글자색 흰색 설정 */
+    background-color: #4caf50; /* 배경색 설정 */
+    border: none; /* 테두리 제거 */
+    border-radius: 5px; /* 테두리 반경 설정 */
+    font-size: 16px; /* 글자 크기 설정 */
+    cursor: pointer; /* 커서 포인터 설정 */
+    box-sizing: border-box; /* 박스 크기 설정 */
+}
+
+#loginForm button:hover, #signupButton:hover {
+    background-color: #45a049; /* 마우스 오버 시 배경색 설정 */
+}
+
+.main-section {
+    padding-top: 100px; /* 위쪽 패딩 설정 */
+    text-align: center; /* 가운데 정렬 */
+    padding: 2rem; /* 내부 여백 설정 */
+    max-width: 800px; /* 최대 너비 설정 */
+    margin: 0 auto; /* 가운데 정렬 */
+    margin-top: 120px; /* 위쪽 마진 설정 */
+}
+
+.sub-section {
+    padding-top: 100px; /* 위쪽 패딩 설정 */
+    text-align: center; /* 가운데 정렬 */
+    padding: 2rem; /* 내부 여백 설정 */
+    max-width: 800px; /* 최대 너비 설정 */
+    margin: 0 auto; /* 가운데 정렬 */
+    margin-top: 10px; /* 위쪽 마진 설정 */
+    margin-bottom: 150px; /* 아래쪽 마진 설정 */
+}
+
+.gallery-container {
+    position: relative; /* 상대 위치 설정 */
+    overflow: hidden; /* 넘치는 부분 숨김 */
+}
+
+.gallery {
+    display: flex; /* 플렉스 박스 사용 */
+    transition: transform 0.5s ease; /* 변환 효과 설정 */
+    margin-top: 20px; /* 위쪽 마진 설정 */
+}
+
+.gallery img {
+    width: 800px; /* 이미지 너비 설정 */
+    height: 400px; /* 이미지 높이 설정 */
+    display: block; /* 블록 요소 설정 */
+}
+
+.arrow {
+    position: absolute; /* 절대 위치 설정 */
+    top: 50%; /* 상단에서 50% 위치 */
+    transform: translateY(-50%); /* 수직 중앙 정렬 */
+    background-color: rgba(0, 0, 0, 0.5); /* 배경색 반투명 설정 */
+    color: white; /* 글자색 흰색 설정 */
+    padding: 0.5rem; /* 내부 여백 설정 */
+    cursor: pointer; /* 커서 포인터 설정 */
+    z-index: 100; /* z-index 설정 */
+}
+
+.left-arrow {
+    left: 10px; /* 왼쪽에서 10px 위치 */
+}
+
+.right-arrow {
+    right: 10px; /* 오른쪽에서 10px 위치 */
+}
+
+.main-section h1 {
+    font-size: 2.5rem; /* 글자 크기 설정 */
+    margin-bottom: 1rem; /* 아래쪽 마진 설정 */
+}
+
+.main-section p {
+    font-size: 1.2rem; /* 글자 크기 설정 */
+    line-height: 1.6; /* 줄 간격 설정 */
+    margin-bottom: 2rem; /* 아래쪽 마진 설정 */
+}
+
+.main-section #startButton {
+    padding: 0.75rem 2rem; /* 내부 여백 설정 */
+    font-size: 1rem; /* 글자 크기 설정 */
+    color: #fff; /* 글자색 흰색 설정 */
+    background-color: #4caf50; /* 배경색 설정 */
+    border: none; /* 테두리 제거 */
+    border-radius: 4px; /* 테두리 반경 설정 */
+    cursor: pointer; /* 커서 포인터 설정 */
+}
+
+.main-section #startButton:hover {
+    background-color: #45a049; /* 마우스 오버 시 배경색 설정 */
+}
+
+.nav-button {
+    background: none; /* 배경 제거 */
+    border: none; /* 테두리 제거 */
+    color: #333; /* 글자색 설정 */
+    cursor: pointer; /* 커서 포인터 설정 */
+    display: flex; /* 플렉스 박스 사용 */
+    flex-direction: column; /* 세로 정렬 */
+    align-items: center; /* 가운데 정렬 */
+    justify-content: center; /* 중앙 정렬 */
+    height: 100px; /* 높이 설정 */
+    width: 100px; /* 너비 설정 */
+    margin: 0 1rem; /* 좌우 마진 설정 */
+    font-size: 1.5rem; /* 글자 크기 설정 */
+    transition: background-color 0.3s, color 0.3s; /* 배경색 및 글자색 변환 효과 설정 */
+}
+
+.nav-button i {
+    font-size: 2rem; /* 아이콘 크기 설정 */
+    margin-bottom: 0.5rem; /* 아래쪽 마진 설정 */
+}
+
+.nav-button span {
+    font-size: 0.8rem; /* 글자 크기 설정 */
+}
+
+.nav-button:hover {
+    background-color: #45a049; /* 마우스 오버 시 배경색 설정 */
+    color: #fff; /* 마우스 오버 시 글자색 흰색 설정 */
+}
+
+.nav-button.active {
+    background-color: #45a049; /* 활성 상태 배경색 설정 */
+    color: #fff; /* 활성 상태 글자색 흰색 설정 */
+}
+
+.nav-links {
+    display: flex; /* 플렉스 박스 사용 */
+    justify-content: space-between; /* 양쪽 정렬 */
+    align-items: center; /* 중앙 정렬 */
+    gap: 1rem; /* 간격 설정 */
+}
+
+.content-container {
+    display: block; /* 블록 요소 설정 */
+}
+
+.content {
+    display: none; /* 기본적으로 숨김 */
+}
+
+.content p {
+    font-size: 1.2rem; /* 글자 크기 설정 */
+    line-height: 1.6; /* 줄 간격 설정 */
+}
+
+.content.active {
+    display: block; /* 활성 상태 표시 */
+}
+
+.content img {
+    width: 800px; /* 이미지 너비 설정 */
+    height: 400px; /* 이미지 높이 설정 */
+}
+
+.mail-link {
+    display: inline-block; /* 인라인 블록 요소 설정 */
+    margin: 20px 0; /* 위아래 마진 설정 */
+    padding: 10px 20px; /* 내부 여백 설정 */
+    font-size: 1.2rem; /* 글자 크기 설정 */
+    color: #fff; /* 글자색 흰색 설정 */
+    background-color: #4caf50; /* 배경색 설정 */
+    text-decoration: none; /* 밑줄 제거 */
+    border-radius: 5px; /* 테두리 반경 설정 */
+    transition: background-color 0.3s, box-shadow 0.3s; /* 배경색 및 그림자 변환 효과 설정 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 박스 그림자 설정 */
+}
+
+.mail-link:hover {
+    background-color: #45a049; /* 마우스 오버 시 배경색 설정 */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* 마우스 오버 시 박스 그림자 설정 */
+}
+
+footer {
+    background-color: #f4f4f4; /* 배경색 설정 */
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+main {
+    margin-top: 80px; /* 위쪽 마진 설정 */
+    padding-top: 60px; /* 위쪽 패딩 설정 */
+}
