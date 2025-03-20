@@ -82,3 +82,78 @@ int main()
     
 }
 */
+---------------------------------------------------
+/*관계연산자 if 사용
+    #include <stdio.h>
+    
+    int main()
+    {
+        int x, y;
+    
+        printf("두개의 정수를 입력하시오: \n");
+        scanf("%d%d", &x, &y);
+        printf("=== 비교연산자 ===\n");
+        
+        printf("1. x > y\n");
+            if (x > y)
+            {
+                 printf("x > y 비교결과 : 참\n");
+            }
+            else
+            {
+                printf("x > y 비교결과 : 거짓\n");
+            }    
+
+        printf("2. x < y\n");
+            if (x < y)
+            {
+                 printf("x < y 비교결과 : 참\n");
+            }
+            else
+            {
+                printf("x < y 비교결과 : 거짓\n");
+            }    
+
+        printf("3. x >= y\n");
+            if (x >= y)
+            {
+                 printf("x >= y 비교결과 : 참\n");
+            }
+            else
+            {
+                printf("x >= y 비교결과 : 거짓\n");
+            }
+
+        printf("4. x <= y\n");
+            if (x <= y)
+            {
+                 printf("x <= y 비교결과 : 참\n");
+            }
+            else
+            {
+                printf("x <= y 비교결과 : 거짓\n");
+            }
+
+        printf("5. x == y\n");
+            if (x == y)
+            {
+                 printf("x == y 비교결과 : 참\n");
+            }
+            else
+            {
+                printf("x == y 비교결과 : 거짓\n");
+            }
+        printf("5. x != y\n");
+            if (x != y)
+            {
+                 printf("x != y 비교결과 : 참\n");
+            }
+            else
+            {
+                printf("x != y 비교결과 : 거짓\n");
+            }
+        
+        return 0;
+            
+    }
+*/
