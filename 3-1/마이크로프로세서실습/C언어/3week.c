@@ -41,4 +41,22 @@ int main()
     
 }
 */
+---------------------------------------------------
+/* 3-3 scanf
+#include <stdio.h>
 
+int main()
+{
+    int    number;
+    float  height;
+
+    scanf("%d", &number);    
+    scanf("%f", &height);
+
+    printf("숫자 = %d \n", number);
+    printf("높이 = %f \n", height);
+
+    return 0;
+    
+}
+*/
