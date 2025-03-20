@@ -20,5 +20,25 @@ int main() {
     
 }
 */
+---------------------------------------------------
+/* 3-2 형식지정자 계산
+#include <stdio.h>
 
-/* 3-2 비교연산자 계산
+int main()
+{
+    int    x = 20;
+    float  y = 10.5;
+    char   z = 'A';
+    char   str[] = "Hello";
+    
+
+    printf("정수 = %d \n", x);
+    printf("실수 = %f \n", y);
+    printf("문자 = %c \n", z);
+    printf("문자열 = %s \n", str);
+
+    return 0;
+    
+}
+*/
+
