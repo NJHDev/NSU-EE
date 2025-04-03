@@ -86,3 +86,57 @@ int main() {
             printf("F학점");
         }
 }
+
+/*문제4*/
+/*변수 fruit의 값이 각각 1, 2, 5일 때, 다음의 코드의 출력을 쓰시오. / if문으로 변환하시오.*/
+/*Default Code*/
+#include <stdio.h>
+
+int main() {
+    int fruit = 0;
+    
+    scanf("%d", &fruit);
+    printf("과일 몇번? %d\n", fruit);
+    
+    switch(fruit) {
+        case 1:
+            printf("사과\n");
+            break;
+        case 2:
+            printf("배\n");
+            break;
+        case 3:
+            printf("바나나\n");
+            break;
+        default:
+            printf("과일\n");
+            break;
+    }
+
+    return 0;
+}
+
+/if문으로 변환*/
+#include <stdio.h>
+
+int main() {
+    int fruit = 0;
+    
+    scanf("%d", &fruit);
+    printf("과일 몇번? %d\n", fruit);
+    
+    if (fruit == 1) {
+        printf("사과\n");
+    } 
+        else if (fruit == 2) {
+            printf("배\n");
+        }
+        else if (fruit == 3) {
+            printf("바나나\n");
+        }
+        else {
+            printf("과일\n");
+        }
+
+    return 0;
+}
