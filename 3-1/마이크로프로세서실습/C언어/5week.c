@@ -14,7 +14,6 @@ int main() {
 
 /*문제1*/
 /*int형 오버플로우 알아보기*/
-
 #include <Arduino.h>
 
 int main() {
@@ -51,4 +50,31 @@ int main() {
     else{
         printf("small");
     }
+}
+
+/*문제3*/
+/*학점계산기*/
+#include <stdio.h>
+
+int main() {
+    int score = 0;
+
+    scanf("%d", &score);
+    printf("점수는? %d\n", score);
+    
+    if(score >= 90){
+        printf("A학점");
+    }
+        else if(score >= 80){
+            printf("B학점");
+        }
+        else if(score >= 70){
+            printf("C학점");
+        }
+        else if(score >= 60){
+            printf("D학점");
+        }
+        else{
+            printf("F학점");
+        }
 }
