@@ -39,13 +39,13 @@
     void sum_func(void);
     void sub_func(void);
     void mult_func(void);
-    void divid_func(void);
+    void divd_func(void);
     
     void main() {
         sum_func();
         sub_func();
         mult_func();
-        divid_func();
+        divd_func();
     }
     
     void sum_func(void){
@@ -60,7 +60,7 @@
         mult = in1 * in2;
         printf("mult = %d\n",mult);
     }
-    void divid_func(void){
+    void divd_func(void){
         divd = in1 / in2;
         printf("divd = %d\n",divd);
     }
@@ -78,13 +78,13 @@
     void sum_func(int a, int b);
     void sub_func(int a, int b);
     void mult_func(int a, int b);
-    void divid_func(int a, int b);
+    void divd_func(int a, int b);
     
     void main() {
         sum_func(in1, in2);
         sub_func(in1, in2);
         mult_func(in1, in2);
-        divid_func(in1, in2);
+        divd_func(in1, in2);
     }
     
     void sum_func(int a, int b){
@@ -99,9 +99,97 @@
         mult = a * b;
         printf("mult = %d\n",mult);
     }
-    void divid_func(int a, int b){
+    void divd_func(int a, int b){
         divd = a / b;
         printf("divd = %d\n",divd);
+    }
+
+    /*int&void*/
+    #include <stdio.h>
+    
+    int in1 = 100; //입력1
+    int in2 = 20; //입력2
+    int sum = 0; //덧셈
+    int sub = 0; //뺄셈
+    int mult = 0; //곱셈
+    int divd = 0; //나눗셈
+    
+    int sum_func(void);
+    int sub_func(void);
+    int mult_func(void);
+    int divd_func(void);
+    
+    void main() {
+        sum = sum_func();
+        sub = sub_func();
+        mult = mult_func();
+        divd = divd_func();
+    
+        printf("sum = %d\n",sum);
+        printf("sub = %d\n",sub);
+        printf("mult = %d\n",mult);
+        printf("divd = %d\n",divd);
+    }
+    
+    int sum_func(void){
+        int s;
+        s = in1 + in2;
+        return s;
+    }
+    int sub_func(void){
+        int s;
+        s = in1 - in2;
+        return s;
+    }
+    int mult_func(void){
+        int s;
+        s = in1 * in2;
+        return s;
+    }
+    int divd_func(void){
+        int s;
+        s = in1 / in2;
+        return s;
+    }
+
+    /*int&인수, 인자*/
+    #include <stdio.h>
+    
+    int in1 = 100; //입력1
+    int in2 = 20; //입력2
+    int sum = 0; //덧셈
+    int sub = 0; //뺄셈
+    int mult = 0; //곱셈
+    int divd = 0; //나눗셈
+    
+    int sum_func(int a, int b);
+    int sub_func(int a, int b);
+    int mult_func(int a, int b);
+    int divd_func(int a, int b);
+    
+    void main() {
+        sum = sum_func(in1, in2);
+        sub = sub_func(in1, in2);
+        mult = mult_func(in1, in2);
+        divd = divd_func(in1, in2);
+    
+        printf("sum = %d\n",sum);
+        printf("sub = %d\n",sub);
+        printf("mult = %d\n",mult);
+        printf("divd = %d\n",divd);
+    }
+    
+    int sum_func(int a, int b){
+        return (a + b);
+    }
+    int sub_func(int a, int b){
+        return (a - b);
+    }
+    int mult_func(int a, int b){
+        return (a * b);
+    }
+    int divd_func(int a, int b){
+        return (a / b);
     }
 
 /*문제1*/
