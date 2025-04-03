@@ -25,6 +25,44 @@
         }
         return 0;
     }
+/*실습2 : 함수*/
+#include <stdio.h>
+
+int in1 = 100; //입력1
+int in2 = 20; //입력2
+int sum = 0; //덧셈
+int sub = 0; //뺄셈
+int mult = 0; //곱셈
+int divd = 0; //나눗셈
+
+void sum_func(void);
+void sub_func(void);
+void mult_func(void);
+void divid_func(void);
+
+void main() {
+    sum_func();
+    sub_func();
+    mult_func();
+    divid_func();
+}
+
+void sum_func(void){
+    sum = in1 + in2;
+    printf("sum = %d\n",sum);
+}
+void sub_func(void){
+    sub = in1 - in2;
+    printf("sub = %d\n",sub);
+}
+void mult_func(void){
+    mult = in1 * in2;
+    printf("mult = %d\n",mult);
+}
+void divid_func(void){
+    divd = in1 / in2;
+    printf("divd = %d\n",divd);
+}
 
 /*문제1*/
 /*int형 오버플로우 알아보기*/
