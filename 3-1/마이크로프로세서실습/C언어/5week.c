@@ -219,10 +219,10 @@
         printf("변수 n의 값은? %d\n", n);
         
         if(n >= 100){
-            printf("large");
+            printf("large\n");
         }
         else{
-            printf("small");
+            printf("small\n");
         }
     }
 
