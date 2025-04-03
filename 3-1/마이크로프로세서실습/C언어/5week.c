@@ -212,7 +212,7 @@
 /*변수 n의 값이 100보다 크거나 같으면 "large", 100보다 작으면 "small"을 출력하는 if-else문을 작성하라.*/
     #include <stdio.h>
     
-    int main() {
+    void main() {
         int n = 0;
     
         scanf("%d", &n);
@@ -230,7 +230,7 @@
 /*학점계산기*/
     #include <stdio.h>
     
-    int main() {
+    void main() {
         int score = 0;
     
         scanf("%d", &score);
