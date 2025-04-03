@@ -1,4 +1,5 @@
 /*실습1*/
+/*오버플로우 with for*/
 #include <stdio.h>
 
 int num = 0;
@@ -12,26 +13,33 @@ int main() {
     return 0;
 }
 
-/*문제1*/
-/*int형 오버플로우 알아보기*/
-#include <Arduino.h>
+#include <stdio.h>
+
+unsigned num = 0;
+int cnt;
 
 int main() {
-    int int_i = 0;
-    unsigned int int_i1 = 0;
 
-    void setup(){
-        Serial.begin(9600);
+    for(cnt = 0; cnt <= 260; cnt++){
+        printf("num=%d\n",++num);
     }
+    return 0;
+}
 
-    void loop() {
-        Serial.print("int -> int=");
-        Serial.print(int_i++, DEC);
-        Serial.print(",");
-        Serial.print("unsigned int->int1=");
-        Serial.printIn(int_i1++);
-        delay(100)
+/*문제1*/
+/*int형 오버플로우 알아보기*/
+#include <stdio.h>
+
+char signed_num = 0;
+unsigned char unsigned_num = 0;
+int cnt;
+
+int main() {
+
+    for(cnt = 0; cnt <= 260; cnt++){
+        printf("signed_num=%d, unsigned_num=%d\n", signed_num++, unsigned_num++);
     }
+    return 0;
 }
 
 /*문제2*/
