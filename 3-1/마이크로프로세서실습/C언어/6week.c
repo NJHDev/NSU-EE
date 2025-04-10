@@ -58,19 +58,19 @@
     #include <stdio.h>
     
     int main() {
-        int n = 0;
-        int cnt;
-        int sum = 0;
+      int n = 0;
+      int cnt;
+      int sum = 0;
     
+        printf("몇까지 더할까?\n");
         scanf("%d", &n);
-        printf("몇까지 더할까? %d\n", n);
-        
-        for(cnt = 1; cnt <= n; cnt++){
-            sum = sum + cnt;
-        }
     
-        printf("%d까지의 합: %d\n", n, sum);
-        return 0;
+      for (cnt = 1; cnt <= n; cnt++) {
+        sum += cnt;
+      }
+    
+      printf("%d까지의 합: %d\n", n, sum);
+      return 0;
     }
 
 /*문제7*/
