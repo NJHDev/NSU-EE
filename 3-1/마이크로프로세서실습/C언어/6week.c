@@ -88,6 +88,26 @@
       return 0;
     }
 
+    /*while로 변환*/
+    #include <stdio.h>
+    
+    int main() {
+      int n = 0;
+      int cnt = 1;
+      int sum = 0;
+    
+      printf("몇까지 더할까?\n");
+      scanf("%d", &n);
+    
+      while (cnt <= n) {
+        sum += cnt;
+        cnt++;
+      }
+    
+      printf("%d까지의 합: %d\n", n, sum);
+      return 0;
+    }
+
 /*문제7*/
 /*구구단 출력프로그램*/
     /*세로*/
