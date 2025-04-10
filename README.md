@@ -24,3 +24,13 @@ TextBook: HTML5 웹프로그래밍 입문 4판(한빛미디어)
 Sample_Code: [SourceCode](https://www.hanbit.co.kr/lib/examFileDown.php?hed_idx=7180)
 
 Developer_Github: [Github](https://github.com/rintiantta/academy-html)
+
+>3학년 1학기
+
+Language: C
+
+TextBook: ATmega128 기초와응용Ⅰ(Ohm사)
+
+C_SourceCode: [SourceCode](https://downapi.cafe.naver.com/v1.0/cafes/article/file/7af972d8-fe0e-11ef-a524-0050569e6672/download)
+
+Sample_ProgramCode: [SourceCode](https://drive.google.com/drive/folders/1ycELx3c7bFkwUlPvXwIC5mOP1n9g4yxQ)
